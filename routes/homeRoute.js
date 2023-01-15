@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-const homeController = require('../controller/homeController');
+const { getHome, postHome } = require('../controller/homeController');
 
-router.route('/home').get(homeController);
+router.route('/home').get(getHome).post(postHome);
 
 module.exports = router;
