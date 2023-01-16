@@ -25,11 +25,15 @@ if (process.env.NODE_ENV === 'development') {
 const homeRoute = require('./routes/homeRoute');
 const aboutRoute = require('./routes/aboutRoutes');
 const experienceRoute = require('./routes/experienceRoute');
+const contactRoute = require('./routes/contactRoutes');
+const educationRoute = require('./routes/educationRoutes');
 
 //
 app.use('/v1/cv/api', homeRoute);
 app.use('/v1/cv/api', aboutRoute);
 app.use('/v1/cv/api', experienceRoute);
+app.use('/v1/cv/api', contactRoute);
+app.use('/v1/cv/api', educationRoute);
 //
 connectDB()
   .then(

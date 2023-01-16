@@ -3,7 +3,21 @@ const experiencesController = {
   // @Desc          Get experieces details
   // @Route         GET v1/cv/api/experience
   // @Access        Private
-  getExperiences: (req, res, next) => {},
+  getExperiences: async (req, res, next) => {
+    try {
+      const data = await Experience.find();
+      res.status(200).json({
+        success: true,
+        data,
+      });
+    } catch (error) {
+      console.log(error);
+      res.status(400).json({
+        success: false,
+        data: '',
+      });
+    }
+  },
   // @Desc          Get experieces details
   // @Route         GET v1/cv/api/experience
   // @Access        Private
