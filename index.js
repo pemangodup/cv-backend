@@ -8,7 +8,10 @@ const colors = require('colors');
 
 app.use(
   cors({
-    origin: 'http://localhost:3000',
+    origin: [
+      'http://localhost:3000',
+      'https://clever-ruby-raincoat.cyclic.app',
+    ],
   })
 );
 
