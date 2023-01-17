@@ -29,9 +29,7 @@ const contactRoute = require('./routes/contactRoutes');
 const educationRoute = require('./routes/educationRoutes');
 
 //
-app.use('/', (req, res, next) => {
-  res.send('Hello World!');
-});
+
 app.use('/v1/cv/api', homeRoute);
 app.use('/v1/cv/api', aboutRoute);
 app.use('/v1/cv/api', experienceRoute);
