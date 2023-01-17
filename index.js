@@ -11,6 +11,7 @@ app.use(
     origin: [
       'http://localhost:3000',
       'https://clever-ruby-raincoat.cyclic.app',
+      'https://pemangodup.github.io/cv/',
     ],
   })
 );
