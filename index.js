@@ -35,7 +35,7 @@ const educationRoute = require('./routes/educationRoutes');
 //
 app.use('/', async (req, res, next) => {
   res.send('Hello World');
-  const h = await Home.find();
+  // const h = await Home.find();
   res.send('Hello World');
   res.status(200).json({
     success: true,
