@@ -8,7 +8,7 @@ const colors = require('colors');
 
 app.use(
   cors({
-    origin: ['http://localhost:3000', 'https://pemangodup.github.io/cv/'],
+    origin: ['http://localhost:3000', 'https://pemangodup.github.io'],
   })
 );
 
