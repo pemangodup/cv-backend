@@ -11,10 +11,10 @@ app.use(
     origin: ['https://pemangodup.github.io'],
   })
 );
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  next();
-});
+// app.use((req, res, next) => {
+//   res.header('Access-Control-Allow-Origin', '*');
+//   next();
+// });
 
 dotenv.config({ path: './config/config.env' });
 //JSON Parser
