@@ -39,7 +39,7 @@ app.use('/v1/cv/api', educationRoute);
 connectDB()
   .then(
     app.listen(process.env.PORT, () => {
-      console.log('App running in the port no 5000'.cyan);
+      console.log('App running in the port no 5000');
     })
   )
   .catch((err) => {
