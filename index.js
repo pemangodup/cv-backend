@@ -8,13 +8,12 @@ const colors = require('colors');
 
 app.use(
   cors({
-    origin: ['https://pemangodup.github.io'],
+    origin: [
+      'https://pemangodup.github.io/',
+      'https://shy-lime-woodpecker-veil.cyclic.app/',
+    ],
   })
 );
-// app.use((req, res, next) => {
-//   res.header('Access-Control-Allow-Origin', '*');
-//   next();
-// });
 
 dotenv.config({ path: './config/config.env' });
 //JSON Parser
