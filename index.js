@@ -9,8 +9,8 @@ const colors = require('colors');
 app.use(
   cors({
     origin: [
-      'https://pemangodup.github.io/',
-      'https://shy-lime-woodpecker-veil.cyclic.app/',
+      'https://pemangodup.github.io',
+      'https://calm-lime-deer-coat.cyclic.app',
     ],
   })
 );
