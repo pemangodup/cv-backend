@@ -8,11 +8,7 @@ const colors = require('colors');
 
 app.use(
   cors({
-    origin: [
-      'http://localhost:3000',
-      'https://shy-lime-woodpecker-veil.cyclic.app',
-      'https://pemangodup.github.io',
-    ],
+    origin: ['https://pemangodup.github.io'],
   })
 );
 app.use((req, res, next) => {
