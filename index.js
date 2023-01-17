@@ -10,8 +10,7 @@ app.use(
   cors({
     origin: [
       'http://localhost:3000',
-      'https://clever-ruby-raincoat.cyclic.app',
-      'https://pemangodup.github.io/cv/',
+      'https://shy-lime-woodpecker-veil.cyclic.app',
     ],
   })
 );
