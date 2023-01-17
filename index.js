@@ -4,6 +4,7 @@ const app = express();
 const morgan = require('morgan');
 const connectDB = require('./config/db');
 const cors = require('cors');
+const Home = require('./model/Home');
 // const colors = require('colors');
 
 app.use(
@@ -32,8 +33,14 @@ const contactRoute = require('./routes/contactRoutes');
 const educationRoute = require('./routes/educationRoutes');
 
 //
-app.use('/', (req, res, next) => {
+app.use('/', async (req, res, next) => {
   res.send('Hello World');
+  const h = await Home.find();
+  res.send('Hello World');
+  res.status(200).json({
+    success: true,
+  });
+  console.log(h);
 });
 app.use('/v1/cv/api', homeRoute);
 app.use('/v1/cv/api', aboutRoute);
