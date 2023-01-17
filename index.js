@@ -4,14 +4,11 @@ const app = express();
 const morgan = require('morgan');
 const connectDB = require('./config/db');
 const cors = require('cors');
-// const colors = require('colors');
+const colors = require('colors');
 
 app.use(
   cors({
-    origin: [
-      'http://localhost:3000',
-      'https://shy-lime-woodpecker-veil.cyclic.app',
-    ],
+    origin: ['http://localhost:3000', 'https://pemangodup.github.io/cv/'],
   })
 );
 
