@@ -6,11 +6,11 @@ const connectDB = require('./config/db');
 const cors = require('cors');
 const colors = require('colors');
 
-// app.use(
-//   cors({
-//     origin: '*',
-//   })
-// );
+app.use(
+  cors({
+    origin: 'https://colorful-hare-cape.cyclic.app',
+  })
+);
 
 dotenv.config({ path: './config/config.env' });
 //JSON Parser
