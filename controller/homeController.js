@@ -4,12 +4,11 @@ const home = {
   // @ Route:   Get /v1/cv/api/home
   // @access    Public
   getHome: async (req, res, next) => {
-    res.send('Hello');
-    // const data = await Home.find();
-    // res.status(200).json({
-    //   success: true,
-    //   data,
-    // });
+    const data = await Home.find();
+    res.status(200).json({
+      success: true,
+      data,
+    });
   },
 
   // @ Desc     Add home page detaials
