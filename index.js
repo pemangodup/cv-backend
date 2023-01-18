@@ -8,7 +8,11 @@ const colors = require('colors');
 
 app.use(
   cors({
-    origin: ['https://colorful-hare-cape.cyclic.app', 'http://localhost:3000'],
+    origin: [
+      'https://colorful-hare-cape.cyclic.app',
+      'http://localhost:3000',
+      'https://pemangodup.github.io',
+    ],
   })
 );
 
