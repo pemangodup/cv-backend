@@ -10,7 +10,7 @@ app.use(
   cors({
     origin: [
       'https://colorful-hare-cape.cyclic.app',
-      // 'http://localhost:3000',
+      'http://localhost:3000',
       'https://pemangodup.github.io',
     ],
   })
@@ -31,6 +31,7 @@ const aboutRoute = require('./routes/aboutRoutes');
 const experienceRoute = require('./routes/experienceRoute');
 const contactRoute = require('./routes/contactRoutes');
 const educationRoute = require('./routes/educationRoutes');
+const sendMailRoute = require('./routes/sendMailRoute');
 
 //
 
@@ -39,11 +40,12 @@ app.use('/v1/cv/api', aboutRoute);
 app.use('/v1/cv/api', experienceRoute);
 app.use('/v1/cv/api', contactRoute);
 app.use('/v1/cv/api', educationRoute);
+app.use('/v1/cv/api', sendMailRoute);
 //
 connectDB()
   .then(
     app.listen(process.env.PORT, () => {
-      console.log('App running in the port no 5000');
+      console.log('App running in the port no 5000'.rainbow);
     })
   )
   .catch((err) => {
