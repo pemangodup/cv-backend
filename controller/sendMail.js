@@ -7,8 +7,7 @@ const mail = {
     try {
       let option = {
         auth: {
-          api_key:
-            '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',
+          api_key: process.env.API_KEY,
         },
       };
       const transporter = nodemailer.createTransport(sgTransport(option));
